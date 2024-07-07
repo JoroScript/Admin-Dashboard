@@ -1,0 +1,35 @@
+dashboard project
+
+2 columns - 1fr 4fr
+3 rows - 1fr 2fr 2fr
+
+navigation (white part on top)
+is 1 whole thing that is also a grid
+2 columns(2fr and 1fr)
+the search bar and text input are in one div
+
+beneatch them the icon with hi there and name @email is another whole div
+
+the other things on the right are in one div as well
+
+justify-content would be space-between with a padding on the whole nav of about 1 em
+
+gray part (main section)
+would be another grid container
+
+your projects would be 3 fr and announcements
+ and trending 1fr
+
+announcements would be the 2nd row
+and trending would be the 3rd row
+
+your projects and articles(all in one div)
+would be
+grid-row 2/4;
+each article is a grid
+
+in it 3 rows each 1fr
+the last div within the articles
+would have a justify-self: end
+
+
