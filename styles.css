@@ -18,6 +18,7 @@ img{
     height: auto;
     padding: 0;
     margin: 0;
+    background-color: none;
 }
 aside{
     background-color: #1992D4;
@@ -31,6 +32,7 @@ aside .logo{
     font-size: 1.5em;
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 ul li{
     list-style: none;
@@ -64,6 +66,27 @@ article{
     background-color: white;
     border-radius: 10px;
     padding: 2em;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+aside .logo .frame{
+    height: 80px;
+    width: 80px;
+}
+aside .logo{
+
+}
+.splitter{
+    margin-bottom: 2em;
+}
+article .interactions .frame{
+    width: 35px;
+    height: 35px;
+}
+article .interactions{
+    display: grid; 
+    grid-template-columns: 50px 50px 50px;
+    justify-self: end;
 }
 .container{
     height: 100%;
@@ -94,9 +117,92 @@ main .trending, main .announcements{
 }
 .top-nav,.bottom-nav{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1.5fr;
     align-items: center;
     padding-inline: 1em;
+}
+.search{
+    padding-right: 4em;
+    padding-left: 2em;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.profile-right{
+    display: grid;
+    grid-template-columns: 75px 75px 150px;
+    justify-content: center;
+    align-items: center;
+}
+.profile-right .frame{
+    height: 30px;
+    width: 35px;
+}
+.profile-right #banner{
+    height: 50px;
+    width: 50px;
+}
+.profile-right #banner img{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.profile-right p{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+input[type="text"]{
+    background-color:#E2E8F0;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+.bottom-nav{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.bottom-nav .profile{
+    padding-left: 2em;
+    display: grid;
+    grid-template-columns: 100px 300px;
+    grid-template-rows: 25px 25px;
+    align-items: center;
+}
+
+.bottom-nav .profile p{
+    font-weight: bold;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.bottom-nav .profile span{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.bottom-nav .nav-buttons{
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    gap: 15px;
+    padding-right: 4em;
+}
+button{
+    color: white;
+    background-color: #1992D4;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    font-weight: bold;
+}
+/* .bottom-nav p{
+    gri
+} */
+.bottom-nav .frame{
+    width: 75px;
+    height: 65px;
+}
+.bottom-nav img{
+    border: 2px solid black;
+    border-radius: 50%;
 }
 #main-title{
     font-size: 1.5em;
