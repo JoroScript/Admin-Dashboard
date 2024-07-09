@@ -39,6 +39,11 @@ ul li{
     color: white;
 }
 ul li a{
+    display: grid;
+    grid-template-columns: 40px 50px;
+    margin-bottom: 0.8em;
+}
+ul li a{
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -73,9 +78,7 @@ aside .logo .frame{
     height: 80px;
     width: 80px;
 }
-aside .logo{
 
-}
 .splitter{
     margin-bottom: 2em;
 }
@@ -215,6 +218,9 @@ button{
     border-radius: 10px;
     padding: 2em;
 }
+.content-announce p, .content-trending p,article p{
+    color: #8a8a8a;
+}
 .content-announce p{
     margin-bottom: 1em;
 }
@@ -223,4 +229,21 @@ hr{
 }
 h6{
     font-size: 1.2em;
+}
+.content-trending .frame{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.content-trending .frame img{
+    border-radius: 50%;
+}
+.person{
+    display: grid;
+    grid-template-columns: 75px 150px;
+    align-items: center;
+    padding-bottom: 1em;
+}
+.person:last-of-type{
+    padding-bottom: 0;
 }
